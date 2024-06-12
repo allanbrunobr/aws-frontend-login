@@ -1,0 +1,29 @@
+/* Target the sign-in container */
+.federated-sign-in-container {
+  background-color: #e0e0e0; /* Change background color */
+  padding: 2rem; /* Add padding */
+}
+
+/* Target the sign-in button */
+.federated-sign-in-button {
+  background-color: #333; /* Change button background color */
+  color: white; /* Change button text color */
+  border: none; /* Remove button border */
+  border-radius: 5px; /* Add button border radius */
+}
+.amplify-button[data-variation='link']:hover {
+  background: none;
+  text-decoration: underline;
+}
+/* Target the input fields */
+input[type="email"], input[type="password"] {
+  border: 1px solid #ccc; /* Add border to input fields */
+  padding: 0.8rem; /* Add padding to input fields */
+  margin-bottom: 1rem; /* Add margin to input fields */
+}
+/* Adicione isso no seu custom.css */
+.federated-sign-in-icon {
+  width: 30px; /* Ajuste o tamanho conforme necessário */
+  height: 30px;
+  fill: #FF9900; /* Ajuste a cor conforme necessário */
+}
