@@ -5,7 +5,7 @@
         <img
           class="amplify-image"
           alt="Amplify logo"
-          src="https://docs.amplify.aws/assets/logo-dark.svg"
+          src="/assets/Atlassian-Logo.png"
         />
       </div>
     </ng-template>
@@ -16,10 +16,13 @@
   >
     <div *ngIf="user">
       <app-navbar></app-navbar>
+      <app-footer></app-footer>
     </div>
-    <router-outlet></router-outlet>
-    <h2>Welcome, {{ user.username }}!</h2>
 
+    <router-outlet></router-outlet>
+    <div *ngIf="user">
+      <app-navbar></app-navbar>
+    </div>
     <button (click)="signOut()">Sign Out</button>
   </ng-template>
 
